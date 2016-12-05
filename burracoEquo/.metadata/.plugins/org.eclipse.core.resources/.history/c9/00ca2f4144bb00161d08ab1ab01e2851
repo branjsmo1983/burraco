@@ -152,10 +152,10 @@ public class MatriceVicinanza {
 				// -------------- inizializzo array jolly
 				//String nome, String colore, int valore, boolean isJolly
 				
-				arrayJolly[0]=new Carta("jolly1","rosso",30,true,0,0);
-				arrayJolly[1]=new Carta("jolly2","rosso",30,true,0,0);
-				arrayJolly[2]=new Carta("jolly1","blu",30,true,0,0);
-				arrayJolly[3]=new Carta("jolly2","blu",30,true,0,0);
+				arrayJolly[0]=new Carta("jolly1","rosso",30,true);
+				arrayJolly[1]=new Carta("jolly2","rosso",30,true);
+				arrayJolly[2]=new Carta("jolly1","blu",30,true);
+				arrayJolly[3]=new Carta("jolly2","blu",30,true);
 				
 				
 		

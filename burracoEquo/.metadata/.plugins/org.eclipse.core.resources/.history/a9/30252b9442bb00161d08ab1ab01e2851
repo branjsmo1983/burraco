@@ -12,10 +12,9 @@ public class Carta {
 	private boolean attaccabile;
 	private boolean coperta;
 	private boolean selezionata;
-	private int numero2;
 	
 	public Carta(String nome, String seme, String colore, int valore, boolean isJolly, boolean isPin, int numero,
-			boolean attaccabile, boolean coperta, boolean selezionata,int numero2) {
+			boolean attaccabile, boolean coperta, boolean selezionata) {
 		super();
 		this.nome = nome;
 		this.seme = seme;
@@ -27,40 +26,6 @@ public class Carta {
 		this.attaccabile = attaccabile;
 		this.coperta = coperta;
 		this.selezionata=selezionata;
-		this.numero2 = numero2;
-	}
-	
-
-
-
-	public Carta(String nome, String seme, String colore, int valore, boolean isJolly, boolean isPin, int numero,
-			int numero2) {
-		super();
-		this.nome = nome;
-		this.seme = seme;
-		this.colore = colore;
-		this.valore = valore;
-		this.isJolly = isJolly;
-		this.isPin = isPin;
-		this.numero = numero;
-		this.numero2 = numero2;
-	}
-
-
-
-
-	public Carta(String nome, String seme, String colore, int valore, boolean isJolly, boolean isPin, int numero,
-			boolean attaccabile, int numero2) {
-		super();
-		this.nome = nome;
-		this.seme = seme;
-		this.colore = colore;
-		this.valore = valore;
-		this.isJolly = isJolly;
-		this.isPin = isPin;
-		this.numero = numero;
-		this.attaccabile = attaccabile;
-		this.numero2 = numero2;
 	}
 
 
@@ -78,14 +43,12 @@ public class Carta {
 	
 	
 
-	public Carta(String nome, String colore, int valore, boolean isJolly,int numero,int numero2) {
+	public Carta(String nome, String colore, int valore, boolean isJolly) {
 		super();
 		this.nome = nome;
 		this.colore = colore;
 		this.valore = valore;
 		this.isJolly = isJolly;
-		this.numero=numero;
-		this.numero2=numero2;
 	}
 
 
@@ -180,18 +143,6 @@ public class Carta {
 
 	public void setSelezionata(boolean selezionata) {
 		this.selezionata = selezionata;
-	}
-
-
-
-	public int getNumero2() {
-		return numero2;
-	}
-
-
-
-	public void setNumero2(int numero2) {
-		this.numero2 = numero2;
 	}
 	
 	

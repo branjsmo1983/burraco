@@ -78,14 +78,12 @@ public class Carta {
 	
 	
 
-	public Carta(String nome, String colore, int valore, boolean isJolly,int numero,int numero2) {
+	public Carta(String nome, String colore, int valore, boolean isJolly) {
 		super();
 		this.nome = nome;
 		this.colore = colore;
 		this.valore = valore;
 		this.isJolly = isJolly;
-		this.numero=numero;
-		this.numero2=numero2;
 	}
 
 

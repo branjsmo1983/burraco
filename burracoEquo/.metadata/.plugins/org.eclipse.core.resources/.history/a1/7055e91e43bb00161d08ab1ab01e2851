@@ -29,39 +29,6 @@ public class Carta {
 		this.selezionata=selezionata;
 		this.numero2 = numero2;
 	}
-	
-
-
-
-	public Carta(String nome, String seme, String colore, int valore, boolean isJolly, boolean isPin, int numero,
-			int numero2) {
-		super();
-		this.nome = nome;
-		this.seme = seme;
-		this.colore = colore;
-		this.valore = valore;
-		this.isJolly = isJolly;
-		this.isPin = isPin;
-		this.numero = numero;
-		this.numero2 = numero2;
-	}
-
-
-
-
-	public Carta(String nome, String seme, String colore, int valore, boolean isJolly, boolean isPin, int numero,
-			boolean attaccabile, int numero2) {
-		super();
-		this.nome = nome;
-		this.seme = seme;
-		this.colore = colore;
-		this.valore = valore;
-		this.isJolly = isJolly;
-		this.isPin = isPin;
-		this.numero = numero;
-		this.attaccabile = attaccabile;
-		this.numero2 = numero2;
-	}
 
 
 
@@ -78,14 +45,12 @@ public class Carta {
 	
 	
 
-	public Carta(String nome, String colore, int valore, boolean isJolly,int numero,int numero2) {
+	public Carta(String nome, String colore, int valore, boolean isJolly) {
 		super();
 		this.nome = nome;
 		this.colore = colore;
 		this.valore = valore;
 		this.isJolly = isJolly;
-		this.numero=numero;
-		this.numero2=numero2;
 	}
 
 
