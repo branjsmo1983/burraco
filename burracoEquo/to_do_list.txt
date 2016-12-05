@@ -1,0 +1,6 @@
+TO DO LIST
+
+-vedere se fare squadra con overload del costruttore per costruirlo a 1 o 2 giocatori
+
+-gioco e turni
+-fine gioco

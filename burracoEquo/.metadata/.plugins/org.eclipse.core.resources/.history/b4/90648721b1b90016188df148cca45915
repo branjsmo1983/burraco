@@ -1,0 +1,24 @@
+package burracoEquo;
+
+import java.util.ArrayList;
+
+public class Canasta {
+	
+	private ArrayList<Carta> canaste;
+	
+	
+
+	public Canasta(ArrayList<Carta> canaste) {
+		super();
+		this.canaste = canaste;
+	}
+
+	public ArrayList<Carta> getCanaste() {
+		return canaste;
+	}
+
+	public void setCanaste(ArrayList<Carta> canaste) {
+		this.canaste = canaste;
+	}
+
+}
