@@ -1,0 +1,36 @@
+package burracoEquo;
+
+import java.util.ArrayList;
+
+public class Tavolo {
+
+	private ArrayList<Canasta> canaste;
+	
+	
+	public Canasta getCanasta(int index){
+		return canaste.get(index);
+	}
+	public int getValore(int index){
+		return getCanasta(index).getValoreCanasta();
+	}
+	public int getValoreCanasta(){
+		int tot=0;
+		for(Canasta i:canaste){
+			tot+=i.getValoreCanasta();
+		}
+		return tot;
+	}
+
+	public Tavolo(ArrayList<Canasta> canaste) {
+		super();
+		this.canaste = canaste;
+	}
+
+	public ArrayList<Canasta> getCanaste() {
+		return canaste;
+	}
+
+	public void setCanaste(ArrayList<Canasta> canaste) {
+		this.canaste = canaste;
+	}
+}

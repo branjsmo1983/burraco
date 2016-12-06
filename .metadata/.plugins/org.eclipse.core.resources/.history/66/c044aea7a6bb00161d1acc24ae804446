@@ -1,0 +1,17 @@
+package burracoEquo;
+
+import java.util.ArrayList;
+
+public class Squadra {
+	
+	private ArrayList<Giocatore> giocatori;
+
+	public ArrayList<Giocatore> getGiocatori() {
+		return giocatori;
+	}
+
+	public void setGiocatori(ArrayList<Giocatore> giocatori) {
+		this.giocatori = giocatori;
+	}
+
+}
