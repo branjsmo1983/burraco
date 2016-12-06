@@ -1,6 +1,6 @@
 TO DO LIST
 
 -vedere se fare squadra con overload del costruttore per costruirlo a 1 o 2 giocatori
--logica della validità della canasta
+-logica della validità della canasta (metodo isRight nella classe Canasta)
 -gioco e turni
 -fine gioco
