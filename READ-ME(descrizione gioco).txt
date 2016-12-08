@@ -1,0 +1,21 @@
+
+CLASSE CARTA
+	-oggetto che descrive la singola carta da gioco con i suoi attributi
+CLASSE GIOCATORE
+	-oggetto ....... giocatore
+CLASSE CANASTA
+	-è un array dinamico (in java chiamato arrayList) con cui creare una collezione di carte da metter sul tavolo
+CLASSE MAZZO
+	-è un arrayList di carte che posson essere pescate dal mazzo
+CLASSE MANO
+	-arrayList di carte in mano ad un singolo giocatore
+CLASSE POZZETTO
+	-arraylist di carte che vengono date ad un giocatore per squadra se questo giocatore finisce le carte date all'inizio
+CLASSE SCARTI
+	-arraylist di carte che si depositano sul tavolo, ogni giocatore ne scarta una per concludere la mossa
+CLASSE TAVOLO
+	-arraylist di canaste, un tavolo per ogni giocatore o coppia di giocatori
+CLASSE MATRICEVICINANZA
+	-tutte le carte presenti nel gioco
+CLASSE PARTITA
+	-dove vengono istanziate tutte le altre classi e si gioca ( da fare!)

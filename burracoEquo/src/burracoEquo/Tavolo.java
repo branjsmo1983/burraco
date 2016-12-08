@@ -7,6 +7,7 @@ public class Tavolo {
 	// ------------------ oggetto che indica al giocatore dove mettere le sue canaste -------
 	
 	private ArrayList<Canasta> canaste;
+	private int giocatore;
 	
 	// ------- metodo che ritorna la canasta in posizione index ---------------------------
 	// ++++++ non so se mi serve +++++++++++++++++
@@ -42,5 +43,13 @@ public class Tavolo {
 
 	public void setCanaste(ArrayList<Canasta> canaste) {
 		this.canaste = canaste;
+	}
+
+	public int getGiocatore() {
+		return giocatore;
+	}
+
+	public void setGiocatore(int giocatore) {
+		this.giocatore = giocatore;
 	}
 }
