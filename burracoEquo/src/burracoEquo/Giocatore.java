@@ -1,5 +1,7 @@
 package burracoEquo;
 
+import java.util.ArrayList;
+
 public class Giocatore {
 	
 	/*
@@ -11,6 +13,7 @@ public class Giocatore {
 	private int punteggio;				//somma i punti delle canaste nel tavolo suo o della sua squadra
 	private boolean seiDmano;			//disabilita le mosse degli altri giocatori
 	private int posizione;				//posizione nel tavolo della partita
+	private ArrayList<Carta> carteMano;
 	
 	
 	
@@ -69,5 +72,13 @@ public class Giocatore {
 
 	public void setPosizione(int posizione) {
 		this.posizione = posizione;
+	}
+
+	public ArrayList<Carta> getCarteMano() {
+		return carteMano;
+	}
+
+	public void setCarteMano(ArrayList<Carta> carteMano) {
+		this.carteMano = carteMano;
 	}
 }

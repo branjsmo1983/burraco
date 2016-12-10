@@ -30,7 +30,7 @@ public class MatriceVicinanza {
 		
 		
 		//istanzio ogni oggetto della matrice
-		//String nome, String seme, String colore, int valore, boolean isJolly, boolean isPin, int numero,
+		//String nome, String seme, String colore, int valore, boolean assegnata, boolean isPin, int numero,
 		//int numero2
 		//istanzio ogni riga della matrice
 		// gli attributi booleani attaccata, coperta,selezionata li setto durante il gioco

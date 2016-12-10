@@ -18,13 +18,14 @@ public class Carta {
 	private boolean attaccabile;				//non so se questo attributo è giusto in questa classe, serve a far un controllo per vedere se può essere attaccato ad una canasta
 	private boolean coperta;					//abilita o disabilità la sua visione, ovvero se vedo il fronte della carta o il retro
 	private boolean selezionata;				//per vedere le carte che sto scegliendo di calare o attaccare
+	private boolean assegnata;						//dice se è stata assegnata o meno
 	private int numero2;						//serve per gestire l'asso (eventualmente anche il 2 se imposto il fatto che il jolly abbia valore 0)
 	
 	
 	// ------------------------  overloading dei costruttori ------------------------------------------
 	
 	public Carta(String nome, String seme, String colore, int valore, boolean isJolly, boolean isPin, int numero,
-			boolean attaccabile, boolean coperta, boolean selezionata,int numero2) {
+			boolean attaccabile, boolean coperta, boolean selezionata, boolean assegnata, int numero2) {
 		super();
 		this.nome = nome;
 		this.seme = seme;
@@ -35,75 +36,45 @@ public class Carta {
 		this.numero = numero;
 		this.attaccabile = attaccabile;
 		this.coperta = coperta;
-		this.selezionata=selezionata;
+		this.selezionata = selezionata;
+		this.assegnata = assegnata;
 		this.numero2 = numero2;
-	}
-	
-
-
-
-	public Carta(String nome, String seme, String colore, int valore, boolean isJolly, boolean isPin, int numero,
-			int numero2) {
-		super();
-		this.nome = nome;
-		this.seme = seme;
-		this.colore = colore;
-		this.valore = valore;
-		this.isJolly = isJolly;
-		this.isPin = isPin;
-		this.numero = numero;
-		this.numero2 = numero2;
-	}
-
-
-
-
-	public Carta(String nome, String seme, String colore, int valore, boolean isJolly, boolean isPin, int numero,
-			boolean attaccabile, int numero2) {
-		super();
-		this.nome = nome;
-		this.seme = seme;
-		this.colore = colore;
-		this.valore = valore;
-		this.isJolly = isJolly;
-		this.isPin = isPin;
-		this.numero = numero;
-		this.attaccabile = attaccabile;
-		this.numero2 = numero2;
-	}
-
-
-
-	public Carta(String nome, String seme, String colore, int valore, boolean isJolly, boolean isPin, int numero) {
-		super();
-		this.nome = nome;
-		this.seme = seme;
-		this.colore = colore;
-		this.valore = valore;
-		this.isJolly = isJolly;
-		this.isPin = isPin;
-		this.numero = numero;
-	}
-	
-	
-
-	public Carta(String nome, String colore, int valore, boolean isJolly,int numero,int numero2) {
-		super();
-		this.nome = nome;
-		this.colore = colore;
-		this.valore = valore;
-		this.isJolly = isJolly;
-		this.numero=numero;
-		this.numero2=numero2;
 	}
 
 
 	// ---------------------------------    get e set degli attributi ------------------------------
 	
 
+	public Carta(String nome, String seme, String colore, int valore, boolean assegnata, boolean isPin, int numero, int numero2) {
+		super();
+		this.nome = nome;
+		this.seme = seme;
+		this.colore = colore;
+		this.valore = valore;
+		this.isPin = isPin;
+		this.numero = numero;
+		this.assegnata = assegnata;
+		this.numero2 = numero2;
+	}
+
+
+	public Carta(String nome, String colore, int valore, boolean isJolly, int numero, int numero2) {
+		// new Carta("jolly1","rosso",30,true,0,0)
+		this.nome = nome;
+		this.colore = colore;
+		this.valore = valore;
+		this.isJolly = isJolly;
+		this.numero = numero;
+		this.numero2 = numero2;
+
+	}
+
+
 	public String getNome() {
 		return nome;
 	}
+
+
 
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -203,6 +174,20 @@ public class Carta {
 
 	public void setNumero2(int numero2) {
 		this.numero2 = numero2;
+	}
+
+
+
+
+	public boolean getAssegnata() {
+		return assegnata;
+	}
+
+
+
+
+	public void setAssegnata(boolean assegnata) {
+		this.assegnata = assegnata;
 	}
 	
 	
